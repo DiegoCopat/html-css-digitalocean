@@ -132,9 +132,65 @@ header .navbar {
     transform: translateY(-50%);
 }
 
+/* main section  */
+main {
+    background-color: #F3F5F9;
+}
+main .sponsor div>div {
+    color: #78839E;
+    padding: 30px;
+}
+.sponsor {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.sponsor ul {
+    position: relative;
+    width: 80%;
+    list-style: none;
+    margin: 0 auto;
+    
+}
+.sponsor ul>li {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: calc((100% / 6));
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sponsor img {
+    width: 100%;
+    padding: 5px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sponsor a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #026BFF;
+}
+
 @media all and (max-width: 992px) {
     .my_container {
         width: 100%;
     }
+
+    .sponsor ul {
+        width: 100%;
+        margin: auto;
+    }
+
 }
 
+@media all and (max-width: 768px) {
+
+    .sponsor ul>li {
+        width: calc((100% / 2));
+    }
+}
