@@ -14,57 +14,92 @@
         <header>
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Brand</a>
-                  </div>
-              
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link</a></li>
-                      <li><a href="#">Link</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">One more separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link</a></li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div><!-- /.navbar-collapse -->
+                    <div class="my_container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header row">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img id="logo" class="relative_center" src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                    
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav nav_left">
+                                <li class="dropdown hover-1">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">products</a></li>
+                                        <li><a href="#">products</a></li>
+                                        <li><a href="#">products</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover-1"><a href="#">Customers</a></li>
+                                <li class="dropdown hover-1">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">community</a></li>
+                                        <li><a href="#">community</a></li>
+                                        <li><a href="#">community</a></li>
+                                        <li><a href="#">community</a></li>
+                                        <li><a href="#">community</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover-1"><a href="#">Pricing</a></li>
+                            </ul>
+                            <ul id="" class="nav navbar-nav navbar-right nav_right">
+                                <li class="hover-1"><a href="#">Docs</a></li>
+                                <li class="dropdown hover-1">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hover-1"><a href="#">Login</a></li>
+                                <li >
+                                    <a id="my_button_1" href="#">Sign Up</a> 
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
                 </div><!-- /.container-fluid -->
             </nav>
+
+            <!-- section jumbotron -->
+            <section class="my_jumbotron container-fluid">
+                <section class="contain_jumbotron row">
+                    <div>
+                        <div class="module-left col-sm-12 col-lg-7">
+                            <h1>The simplest cloud platform for developers & teams</h1>
+                            <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
+                        </div>
+                        <div class="module-right col-sm-12 col-lg-5 text-center">
+                            <h3>Deploy your app in seconds.</h3>
+                            <h4 class="text-blue">Get started now.</h4>
+                            <form action="">
+                                <input type="email" name="nome" id="" placeholder="Email">
+                                <input type="password" name="" id="" placeholder="password">
+                                <input class="button_blue" type="button" value="Create your account">
+                                <a class="button-google" href="">
+                                    <img src="img/google-icon.png" alt="google">
+                                    <span>Sign up with google</span>
+                                </a>
+                                <div>By signing up you agree to the <a href="#">Terms of Service</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- /section jumbotron -->
         </header>
         <!-- /sezione dedicata all'header  -->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
