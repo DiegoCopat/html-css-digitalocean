@@ -15,7 +15,7 @@
         <header>
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
-                    <div class="my_container">
+                    <div class="my_container_header">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header row">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -85,11 +85,11 @@
             <section class="my_jumbotron container-fluid">
                 <section class="contain_jumbotron row">
                     <div>
-                        <div class="module-left col-sm-12 col-lg-7">
+                        <div class="module-left col-xs-12 col-sm-12 col-lg-7">
                             <h1>The simplest cloud platform for developers & teams</h1>
                             <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
                         </div>
-                        <div class="module-right col-sm-12 col-lg-5 text-center">
+                        <div class="module-right col-xs-12 col-sm-12 col-lg-5 text-center">
                             <h3>Deploy your app in seconds.</h3>
                             <h4 class="text-blue">Get started now.</h4>
                             <form action="">
@@ -112,6 +112,8 @@
 
         <!-- main section  -->
         <main>
+
+            <!-- sponsor section  -->
             <section class="sponsor container-fluid">
                 <div class="row">
                     <div class="text-uppercase">Innovate business trust digitalocean</div>
@@ -129,14 +131,16 @@
                 <div class="text-center">
                     <a href="#">View customer stories ></a>
                 </div>
-            </section>
+            </section> 
+            <!-- /sponsor section  -->
                 
+            <!-- deploy section  -->
             <section id="deploy" class="container-fluid">
                 <div class="my_container_main">
                     <h2 class="text-center">Deploy and scale seamlessly</h2>
                     <p class="text-center">Our iotimized configuration process saves your team time when running and scaling distributed applications, Al & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
                     <div class="row">
-                        <div id="deploy_left" class="col-lg-3 col-lg-offset-1">
+                        <div id="deploy_left" class="col-sm-3 col-sm-offset-1">
                             <ul>
                                 <li><a href="#">Deploy</a></li>
                                 <li><a href="#">Manage</a></li>
@@ -146,24 +150,26 @@
                             </ul>
                         </div>
                         
-                        <div class="col-lg-7">
-                            <div  id="deploy_right" class="row">
-                                <div class="col-lg-6">
+                        <div class="col-sm-7">
+                            <div class="row">
+                                <div class="col-sm-6 deploy_right">
                                     <img src="img/cluster-deploy.svg" alt="cluster deploy">
                                     <h4>Cluster deploy</h4>
                                     <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-sm-6 deploy_right">
                                     <img src="img/optimized-compute.svg" alt="optimized compute">
                                     <h4>Optimized compute</h4>
                                     <p>Get the compute resources you need with Standard or Optimized Dropiets.</p>
                                 </div>
-                                <div class="col-lg-6">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 deploy_right">
                                     <img src="img/one-click.svg" alt="one click">
                                     <h4>One-click apps</h4>
                                     <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-sm-6 deploy_right">
                                     <img src="img/global.svg" alt="global">
                                     <h4>Global availability</h4>
                                     <p>Deploy to any of our data center regions around the world.</p>
@@ -172,7 +178,204 @@
                         </div>
                     </div>
                 </div>
+            </section> 
+            <!-- /deploy section -->
+
+            <!-- designed for section -->
+            <section id="designed_for">
+                <section class="container-fluid">
+                    <h2> Designed for developers</h2>
+                    <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                            <i id="arrow-left" class="fas fa-angle-left"></i>
+                            <img src="img/slide.jpg" alt="">
+                            <i id="arrow-right" class="fas fa-angle-right"></i>
+                        </div>
+                        <div class="row">
+                            <img-caption class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                                <span>Create compute servers in 55 seconds or less</span>
+                                <div>
+                                    <div class="row">
+                                        <ul class="col-sm-2 col-sm-offset-5">
+                                            <li class="blue"></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </img-caption>
+                        </div>
+                    </div>
+                </section>
             </section>
+            <!-- designed for section -->
+
+            <!-- business needs section -->
+            <section id="business_need">
+                <section class="container-fluid">
+                    <h2 class="text-center">The feature your business needs</h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="img/pred-pricing.svg" alt="predictable pricing">
+                            <h4>Predictable pricing</h4>
+                            <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry leading pricing structure.</p>
+                            <a href="#">Pricing ></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="img/world-class.svg" alt="world class service">
+                            <h4>World-class service</h4>
+                            <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
+                            <a href="#">Support ></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="img/reliable-platform.svg" alt="reliable platform">
+                            <h4>Reliable platform</h4>
+                            <p>More than 100.000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services</p>
+                            <a href="#">Security ></a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- /business needs section -->
+
+            <!-- servics regions section -->
+            <section id="service">
+                <section class="container-fluid">
+                    <h2 class="text-center">Service your customers around the world from 12 regions.</h2>
+                    <div class="row">
+                        <div id="table_left" class="col-xs-12 col-md-5 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-md-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2  text-uppercase">ams2</div>
+                                        <div class="col-xs-6 text-lightblue">Amsterdam, Netherlands</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">ams3</div>
+                                        <div class="col-xs-6 text-lightblue">Amsterdam, Netherlands</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">bla1</div>
+                                        <div class="col-xs-6 text-lightblue">Bangalore, India</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">fra1</div>
+                                        <div class="col-xs-6 text-lightblue">Frankfurt, German</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">lon1</div>
+                                        <div class="col-xs-6 text-lightblue">London, UK</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">nyc1</div>
+                                        <div class="col-xs-6 text-lightblue">New York, USA</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="table_right" class="col-xs-12 col-md-5">
+                            <div class="row">
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">ams2</div>
+                                        <div class="col-xs-6 text-lightblue">Amsterdam, Netherlands</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">ams3</div>
+                                        <div class="col-xs-6 text-lightblue">Amsterdam, Netherlands</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">bla1</div>
+                                        <div class="col-xs-6 text-lightblue">Bangalore, India</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">fra1</div>
+                                        <div class="col-xs-6 text-lightblue">Frankfurt, German</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">lon1</div>
+                                        <div class="col-xs-6 text-lightblue">London, UK</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-xs-12 height_35">
+                                    <div class="row">
+                                        <div class="col-xs-2 text-uppercase">nyc1</div>
+                                        <div class="col-xs-6 text-lightblue">New York, USA</div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="#">Test speed ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- /servics regions section -->
+
         </main>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

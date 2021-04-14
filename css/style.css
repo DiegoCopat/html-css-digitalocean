@@ -6,7 +6,6 @@ body {
     position: relative;
     bottom: 30%;
 }
-
 /* css font */
 h1 {
     font-size: 50px;
@@ -17,6 +16,9 @@ h1 {
 .text-blue {
     color: #006AFF;
 }
+.text-lightblue {
+    color: #92A7DC;
+}
 
 /* css dedicati all'header  */
 #logo {
@@ -24,15 +26,18 @@ h1 {
     width: 150px;
 }
 
-.my_container {
+.my_container_header {
     width: 80%;
     margin: 0 auto;
     line-height: 50px;
-    font-size: 12px;
+    font-size: 15px;
 }
 .my_container_main {
     width: 80%;
     margin: 0 auto;
+}
+.my_container_main>div {
+    margin-top: 30px;
 }
 
 header .nav_left>li>a {
@@ -152,6 +157,7 @@ main .sponsor div>div {
     position: relative;
     width: 80%;
     list-style: none;
+    padding-left: 0;
     margin: 0 auto;
     
 }
@@ -179,18 +185,24 @@ main .sponsor div>div {
     color: #026BFF;
 }
 
-/* section main deploy */
+/* section main deploy and some designed for*/
 #deploy {
+    background-color: white;
     padding-top: 50px;
+    padding-bottom: 30px;
 }
-#deploy .my_container_main h2 {
+#deploy .my_container_main h2,
+#designed_for h2,
+#business_need h2 {
     font-size: 30px;
     font-weight: 700;
+    color: #031C4E;
 }
-#deploy .my_container_main p {
+#deploy .my_container_main p,
+#designed_for p {
     color: #5C6A88;
     font-size: 18px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 #deploy_left ul {
     list-style: none;
@@ -205,16 +217,167 @@ main .sponsor div>div {
     color: #78839E;
 }
 
-#deploy_right img {
+.deploy_right img,
+#business_need img {
+    padding-bottom: 15px;
+}
+.deploy_right h4,
+#business_need h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #031C4E;
+}
+
+/* designed for section  */
+#designed_for {
+    background-color: #F3F5F9;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#designed_for h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #031C4E;
+}
+#designed_for img {
+    width: 90%;
+    padding-bottom: 15px;
+    margin: 0 5%;
+}
+#designed_for .row {
+    position: relative;
+}
+#designed_for i{
+    font-size: 50px;  
+    color: #6F7B97; 
+}
+#arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+}
+#designed_for .caption-img span{
+    font-size: 20px;
+    color: #495A7E;
+}
+#designed_for ul {
+    margin-top: 10px;
+}
+#designed_for li {
+    list-style: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #006AFF;
+}
+#designed_for .blue {
+    background-color: #006AFF;
+}
+
+/* business needs section */
+#business_need {
+    width: 80%;
+    margin: 50px auto 50px auto;
+    background-color: white;
+}
+#business_need a {
+    font-size: 13px;
+    color: #056EFF;
+}
+#business_need div>div {
+    margin: 30px 0 30px 0;
+}
+
+/* servics regions section */
+#service {
+    padding: 50px 0 50px 0;
+    background-color: #0043C1;
+    color: white;
+}
+#service h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+#service .height_35 div{
+    line-height: 35px;
+}
+#table_left,
+#table_right {
+    margin-top: 20px;
+}
+#table_left hr,
+#table_right hr {
+    border: 1px solid #92A7DC;
+    width: 95%;
+    margin-right: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#service a {
+    color: #00B8CC;
     
 }
 
 
 
-@media all and (max-width: 992px) {
 
-    .my_container {
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 991px) {
+
+    .my_container_header {
         width: 100%;
+    }
+    .module-right{
+        margin-top: 30px;
+    }
+    .module-left p{
+        margin: 0 0 0px;
+    }
+    .my_jumbotron div {
+        padding: 15px 0 15px 0;
     }
     .sponsor ul {
         width: 100%;
@@ -224,11 +387,26 @@ main .sponsor div>div {
         width: 90%;
         padding: 0 15px;
     }
-
+    .deploy_right{
+        margin-top: 30px;
+    }
+    #business_need {
+        width: 100%;
+        margin: 50px auto 50px auto;
+    }
+    
+    #table_left,
+    #table_right {
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 2.5%;
+    }
+    
 }
 
 @media all and (max-width: 768px) {
 
+    
     .sponsor ul>li {
         width: calc((100% / 2));
         margin-top: 30px;
@@ -238,4 +416,8 @@ main .sponsor div>div {
         width: 100%;
         padding: 0 15px;
     }
+    #designed_for i {
+        display: none;
+    }
+    
 }
