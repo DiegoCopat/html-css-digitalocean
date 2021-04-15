@@ -152,24 +152,24 @@
                         
                         <div class="col-sm-7">
                             <div class="row">
-                                <div class="col-sm-6 deploy_right">
+                                <div id="deploy-hover" class="col-sm-6 deploy_right">
                                     <img src="img/cluster-deploy.svg" alt="cluster deploy">
                                     <h4>Cluster deploy</h4>
                                     <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
                                 </div>
-                                <div class="col-sm-6 deploy_right">
+                                <div id="deploy-hover" class="col-sm-6 deploy_right">
                                     <img src="img/optimized-compute.svg" alt="optimized compute">
                                     <h4>Optimized compute</h4>
                                     <p>Get the compute resources you need with Standard or Optimized Dropiets.</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-6 deploy_right">
+                                <div id="deploy-hover" class="col-sm-6 deploy_right">
                                     <img src="img/one-click.svg" alt="one click">
                                     <h4>One-click apps</h4>
                                     <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                                 </div>
-                                <div class="col-sm-6 deploy_right">
+                                <div id="deploy-hover" class="col-sm-6 deploy_right">
                                     <img src="img/global.svg" alt="global">
                                     <h4>Global availability</h4>
                                     <p>Deploy to any of our data center regions around the world.</p>
@@ -184,30 +184,27 @@
             <!-- designed for section -->
             <section id="designed_for">
                 <section class="container-fluid">
-                    <h2> Designed for developers</h2>
-                    <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
-                    <div class="row">
+                    <div class="row relative">
+                        <h2> Designed for developers</h2>
+                        <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>                        
                         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                             <i id="arrow-left" class="fas fa-angle-left"></i>
                             <img src="img/slide.jpg" alt="">
                             <i id="arrow-right" class="fas fa-angle-right"></i>
                         </div>
-                        <div class="row">
-                            <img-caption class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-                                <span>Create compute servers in 55 seconds or less</span>
-                                <div>
-                                    <div class="row">
-                                        <ul class="col-sm-2 col-sm-offset-5">
-                                            <li class="blue"></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </img-caption>
-                        </div>
-                    </div>
+                                    
+                        <section class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                            <span>Create compute servers in 55 seconds or less</span>
+                            <div class="row relative">
+                                <ul class="col-sm-2 col-sm-offset-5">
+                                    <li class="blue"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>    
                 </section>
             </section>
             <!-- designed for section -->
@@ -382,32 +379,28 @@
                     <h2 class="text-center">Development teams love DigitalOcean</h2>
                     <div class="row relative">
                         <i id="teams-arrow-left" class="fas fa-angle-left"></i>
-                        <div id="development_img" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-                            <div class="">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                            <div id="development_img">
                                 <img src="img/rockerbox.png" alt="rockerbox">
-                                <img-caption class="col-xs-12 text-center">
-                                <span>"We have been albe to make scaling the technical infrastructure of our business cost effective and efficient.""</span>
-                                <div class="caption_cit">
-                                    <h4>Rick O'Toole</h4>
-                                    <div>Co-founder and CTO</div>
-                                    <a href="#">Read story ></a>
+                                <div class="row">
+                                    <section class="col-xs-12 text-center">
+                                        <span>"We have been albe to make scaling the technical infrastructure of our business cost effective and efficient.""</span>
+                                        <div class="caption_cit">
+                                            <h4>Rick O'Toole</h4>
+                                            <div>Co-founder and CTO</div>
+                                            <a href="#">Read story ></a>
+                                        </div>
+                                    </section>
                                 </div>
-                                </img-caption>
                             </div>
                         </div>
                         <i id="teams-arrow-right" class="fas fa-angle-right"></i>
-
-                        <div>
-                            <div>
-                                <div class="row text-center">
-                                    <ul class="col-xs-12">
-                                        <li class="blue"></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="col-sm-2 col-sm-offset-5 text-center">
+                            <li class="blue"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </section>
             </section>
